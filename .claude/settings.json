@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:www.alhuzaifa.com)",
+      "Bash(node -e ' *)"
+    ]
+  }
+}
