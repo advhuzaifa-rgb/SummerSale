@@ -1,0 +1,37 @@
+:root {
+ 
+
+  --color-bg: #f5f5f5;
+  --color-text: #222;
+  --color-accent: #0070f3;
+  --fs-42: clamp(1.25rem, 1.39vi + 0.95rem, 2.63rem);
+  --fs-46: clamp(1.5rem, 1.39vi + 1.2rem, 2.88rem);
+  --fs-32: clamp(1.25rem, 0.76vi + 1.09rem, 2rem);
+  --fs-40: clamp(1.25rem, 1.27vi + 0.98rem, 2.5rem);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+*:focus:not(:focus-visible) {
+  outline: none;
+}
+
+body {
+  font-family: var(--font-poppins), sans-serif;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+}
+.space{
+  height: 104px;
+  background-color: #ffff;
+}
+@media (max-width:640px){
+  .space{
+    display: none;
+  }
+}
