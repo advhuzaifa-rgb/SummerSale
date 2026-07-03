@@ -5,7 +5,7 @@ import React from 'react'
 import { fileURLToPath } from 'url'
 
 import config from '@/payload.config'
-import './global.css'
+import './globals.css'
 
 export default async function HomePage() {
   const headers = await getHeaders()
@@ -17,6 +17,7 @@ export default async function HomePage() {
 
   return (
   <>
+  <h3>veer</h3>
   </>
   )
 }
