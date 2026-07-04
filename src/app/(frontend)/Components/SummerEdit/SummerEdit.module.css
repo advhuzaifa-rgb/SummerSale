@@ -55,6 +55,7 @@
 }
 .imageWrapper{
     width: 100%;
+    min-height: 0;
     aspect-ratio: 1 / 1;
     overflow: hidden;
 }
