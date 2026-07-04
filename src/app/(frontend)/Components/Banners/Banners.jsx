@@ -16,7 +16,7 @@ const banners = [
     desktop: desktop1,
     mobile: mobile1,
     alt: 'Statement Seating',
-    href: 'https://www.alhuzaifa.com/en/shop/shop-by-room/living-room/',
+    href: 'https://www.alhuzaifa.com/en/shop',
   },
   {
     desktop: desktop2,
@@ -28,7 +28,7 @@ const banners = [
     desktop: desktop3,
     mobile: mobile3,
     alt: 'Al Huzaifa banner',
-    href: 'https://www.alhuzaifa.com/en/shop/',
+    href: 'https://www.alhuzaifa.com/en/shop/shop-by-room/living-room/',
   },
 ]
 
