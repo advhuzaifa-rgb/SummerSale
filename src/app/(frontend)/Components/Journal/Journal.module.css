@@ -3,7 +3,7 @@
     justify-content: center;
     width: 100%;
     background-color: #FFFCF7;
-    padding: 0 clamp(24px, 4vw, 50px);
+    padding: 0 clamp(24px, 4vw, 50px) 100px clamp(24px, 4vw, 50px);
 }
 .MainContainer{
     display: flex;
@@ -142,5 +142,8 @@
         height: 6px;
         border-radius: 44px;
         background-color: #4E4E4E;
+    }
+    .main{
+        padding-bottom: 80px;
     }
 }

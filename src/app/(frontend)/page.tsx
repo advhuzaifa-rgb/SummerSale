@@ -41,7 +41,7 @@ export default async function HomePage() {
       <Partner />
 
       <Journal />
-      <Discover />
+      {/* <Discover /> */}
 
       <Footer />
     </>
