@@ -182,13 +182,13 @@
         width: 6px;
         height: 6px;
         border-radius: 50%;
-        background-color: #404040;
+        background-color: #4E4E4E;
         transition: width 0.3s ease, border-radius 0.3s ease;
     }
     .pillActive{
         width: 45px;
         height: 6px;
         border-radius: 44px;
-        background-color: #414141;
+        background-color: #4E4E4E;
     }
 }

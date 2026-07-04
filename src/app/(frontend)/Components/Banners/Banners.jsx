@@ -4,12 +4,12 @@ import styles from './Banners.module.css'
 import Image from 'next/image'
 import useEmblaCarousel from 'embla-carousel-react'
 import Autoplay from 'embla-carousel-autoplay'
-import desktop1 from './1.png'
-import desktop2 from './2.png'
-import desktop3 from './3.png'
-import mobile1 from './1m.png'
-import mobile2 from './2m.png'
-import mobile3 from './3m.png'
+import desktop1 from './1.webp'
+import desktop2 from './2.webp'
+import desktop3 from './3.webp'
+import mobile1 from './1m.webp'
+import mobile2 from './2m.webp'
+import mobile3 from './3m.webp'
 
 const banners = [
   {

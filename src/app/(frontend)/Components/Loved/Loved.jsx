@@ -91,7 +91,7 @@ const Loved = () => {
     <div className={styles.main}>
       <div className={styles.MainContainer}>
         <div className={styles.headerRow}>
-          <h2>Loved by Homeowners Across the UAE</h2>
+          <h2>What Our Customers Say</h2>
           <div className={styles.arrows}>
             <button
               type="button"

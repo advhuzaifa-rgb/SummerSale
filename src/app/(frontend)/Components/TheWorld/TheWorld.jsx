@@ -1,8 +1,8 @@
 import React from 'react'
 import styles from './TheWorld.module.css'
 import Image from 'next/image'
-import one from './1d.png'
-import two from './1m.png'
+import one from './1d.webp'
+import two from './1m.webp'
 
 const TheWorld = () => {
   return (

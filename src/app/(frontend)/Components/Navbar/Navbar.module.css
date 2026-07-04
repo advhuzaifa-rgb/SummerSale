@@ -34,10 +34,10 @@
 
 @media (max-width: 640px) {
     .main{
-        height: 70px;
+        height: 56px;
     }
     .logo{
-        max-width: 48px;
-        max-height: 42px;
+        max-width: 40px;
+        max-height: 35px;
     }
 }

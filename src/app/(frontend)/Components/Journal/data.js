@@ -1,6 +1,6 @@
-import one from './1.png'
-import two from './2.png'
-import three from './3.png'
+import one from './1.webp'
+import two from './2.webp'
+import three from './3.webp'
 
 export const articles = [
   {
