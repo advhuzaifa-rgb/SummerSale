@@ -3,7 +3,7 @@
     justify-content: center;
     width: 100%;
     background-color: #FFFCF7;
-    padding: clamp(80px, 7vw, 100px) clamp(24px, 4vw, 50px);
+    padding: 0 clamp(24px, 4vw, 50px);
 }
 .MainContainer{
     display: flex;
@@ -38,12 +38,12 @@
     align-items: stretch;
     justify-content: center;
     width: 100%;
-    gap: 8px;
+    gap: 25px;
 }
 .card{
     position: relative;
     flex: 1;
-    aspect-ratio: 437 / 504;
+    aspect-ratio: 437 / 522;
     overflow: hidden;
 }
 .cardImage{
@@ -61,6 +61,9 @@
     position: absolute;
     left: 25px;
     bottom: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
 }
 .cardText h3{
     font-family: var(--font-pp-hatton);
@@ -69,10 +72,16 @@
     color: #FFFFFF;
     margin: 0;
 }
+.cardText span{
+    font-family: var(--font-poppins);
+    font-weight: 400;
+    font-size: 14px;
+    color: #FFFFFF;
+}
 
 @media (min-width: 641px) and (max-width: 1024px) {
     .cards{
-        gap: 6px;
+        gap: 16px;
     }
     .cardText{
         left: 16px;
@@ -81,11 +90,14 @@
     .cardText h3{
         font-size: 20px;
     }
+    .cardText span{
+        font-size: 12px;
+    }
 }
 
 @media (max-width: 640px) {
     .main{
-        padding: 80px 24px;
+        padding: 0px 24px;
     }
     .MainContainer{
         gap: 24px;
@@ -100,14 +112,18 @@
     .cards{
         display: grid;
         grid-template-columns: 1fr 1fr;
-        column-gap: 10px;
-        row-gap: 10px;
+        column-gap: 20px;
+        row-gap: 17px;
     }
     .cardText{
         left: 10px;
         bottom: 10px;
+        gap: 2px;
     }
     .cardText h3{
         font-size: 16px;
+    }
+    .cardText span{
+        font-size: 11px;
     }
 }

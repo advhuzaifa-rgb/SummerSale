@@ -1,0 +1,193 @@
+.main{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: #FFFCF7;
+    padding: 0 clamp(24px, 4vw, 50px);
+}
+.MainContainer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 30px;
+}
+.headerRow{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.headerRow h2{
+    flex: 1;
+    text-align: center;
+    font-family: var(--font-pp-hatton);
+    font-weight: 400;
+    font-size: var(--fs-70);
+    color: #CD7D6D;
+    margin: 0;
+}
+.arrows{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    flex-shrink: 0;
+}
+.arrowBtn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    line-height: 0;
+}
+.arrowBtn:disabled{
+    opacity: 0.3;
+    cursor: default;
+}
+.viewport{
+    overflow: hidden;
+    width: 100%;
+}
+.container{
+    display: flex;
+    gap: 24px;
+}
+.slide{
+    flex: 0 0 31%;
+    min-width: 0;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    background-color: #EFEAE4;
+    padding: 43px 46px 20px 46px;
+    height: 100%;
+}
+.card p{
+    font-family: var(--font-poppins);
+    font-weight: 400;
+    font-size: 20px;
+    color: #414141;
+    margin: 0 0 44px 0;
+}
+.nameBlock{
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    margin-top: auto;
+}
+.nameBlock h3{
+    font-family: var(--font-pp-hatton);
+    font-weight: 500;
+    font-size: 25px;
+    color: #414141;
+    margin: 0;
+}
+.nameBlock span{
+    font-family: var(--font-poppins);
+    font-weight: 400;
+    font-size: 18px;
+    color: rgba(65, 65, 65, 0.4);
+}
+.progressTrack{
+    position: relative;
+    width: 70%;
+    max-width: 720px;
+    height: 2px;
+    margin: 40px auto 0 auto;
+    background-color: rgba(167, 167, 167, 0.4);
+}
+.progressFill{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 2px;
+    background-color: #414141;
+}
+.pills{
+    display: none;
+}
+.pill{
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+@media (min-width: 641px) and (max-width: 1024px) {
+    .slide{
+        flex: 0 0 46%;
+    }
+    .card{
+        padding: 32px 28px 20px 28px;
+    }
+    .card p{
+        font-size: 18px;
+        margin-bottom: 32px;
+    }
+    .nameBlock h3{
+        font-size: 20px;
+    }
+    .nameBlock span{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 640px) {
+    .main{
+        padding: 0px 0px 0px 24px;
+    }
+    .MainContainer{
+        gap: 24px;
+    }
+    .headerRow{
+        padding-right: 24px;
+    }
+    .arrows{
+        display: none;
+    }
+    .container{
+        gap: 16px;
+    }
+    .slide{
+        flex: 0 0 88%;
+    }
+    .card{
+        padding: 16px;
+    }
+    .card p{
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+    .nameBlock h3{
+        font-size: 20px;
+    }
+    .nameBlock span{
+        font-size: 16px;
+    }
+    .progressTrack{
+        display: none;
+    }
+    .pills{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 4px;
+        margin-top: 20px;
+    }
+    .pill{
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background-color: #404040;
+        transition: width 0.3s ease, border-radius 0.3s ease;
+    }
+    .pillActive{
+        width: 45px;
+        height: 6px;
+        border-radius: 44px;
+        background-color: #414141;
+    }
+}

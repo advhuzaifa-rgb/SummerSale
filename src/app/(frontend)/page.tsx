@@ -10,6 +10,14 @@ import Footer from './Components/Footer/Footer'
 import SummerStyling from './Components/SummerStyling/SummerStyling'
 import Discover from './Components/Discover/Discover'
 import Partner from './Components/Partner/Partner'
+import Contact from './Components/Contact/Contact'
+import ShopbyMood from './Components/ShopbyMood/ShopbyMood'
+import Navbar from './Components/Navbar/Navbar'
+import TheWorld from './Components/TheWorld/TheWorld'
+import Loved from './Components/Loved/Loved'
+import Journal from './Components/Journal/Journal'
+import Banners from './Components/Banners/Banners'
+import SummerEdit from './Components/SummerEdit/SummerEdit'
 
 export default async function HomePage() {
   const headers = await getHeaders()
@@ -21,10 +29,20 @@ export default async function HomePage() {
 
   return (
     <>
+      <Navbar />
       <Landing />
-      <Partner />
+      <Banners />
+      <ShopbyMood />
+      <SummerEdit />
       <SummerStyling />
+      <Contact />
+      <TheWorld />
+      <Loved />
+      <Partner />
+
+      <Journal />
       <Discover />
+
       <Footer />
     </>
   )

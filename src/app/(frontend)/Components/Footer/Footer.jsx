@@ -34,7 +34,7 @@ const Footer = () => {
 
             </div>
             <div className={styles.bottom}>
-                <p>Copyright © 2025 Al-Huzaifa</p>
+                <p>Copyright © 2026 Al-Huzaifa</p>
                 <p>Crafted by <a href="https://integramagna.com/" target="_blank" rel="noopener noreferrer"><span className={styles.im}>Integra Magna </span></a></p>
 
 

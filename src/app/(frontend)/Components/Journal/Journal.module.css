@@ -3,36 +3,21 @@
     justify-content: center;
     width: 100%;
     background-color: #FFFCF7;
-    padding: clamp(80px, 7vw, 100px) clamp(24px, 4vw, 50px);
+    padding: 0 clamp(24px, 4vw, 50px);
 }
 .MainContainer{
     display: flex;
     flex-direction: column;
-    align-items: center;
     width: 100%;
     gap: 30px;
 }
-.topContainer{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 4px;
-    max-width: 1011px;
-    text-align: center;
-}
-.topContainer h2{
+.MainContainer h2{
     font-family: var(--font-pp-hatton);
     font-weight: 400;
     font-size: var(--fs-70);
     color: #CD7D6D;
     margin: 0;
-}
-.topContainer p{
-    font-family: var(--font-poppins);
-    font-weight: 400;
-    font-size: 20px;
-    color: #414141;
-    margin: 0;
+    text-align: center;
 }
 .viewport{
     overflow: hidden;
@@ -40,10 +25,10 @@
 }
 .container{
     display: flex;
-    gap: 25px;
+    gap: 24px;
 }
 .slide{
-    flex: 0 0 calc(25% - 18.75px);
+    flex: 0 0 calc(33.333% - 16px);
     min-width: 0;
     display: flex;
 }
@@ -54,7 +39,7 @@
 }
 .imageWrapper{
     width: 100%;
-    aspect-ratio: 437 / 427;
+    aspect-ratio: 590 / 680;
     overflow: hidden;
 }
 .image{
@@ -63,13 +48,31 @@
     height: 100%;
     object-fit: cover;
 }
-.card span{
-    font-family: var(--font-pp-hatton);
-    font-weight: 500;
-    font-size: 24px;
-    color: #CD7D6D;
-    margin-top: 10px;
-    text-align: center;
+.card p{
+    font-family: var(--font-poppins);
+    font-weight: 400;
+    font-size: 20px;
+    color: #414141;
+    margin: 15px 0 15px 0;
+}
+.cta{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    align-self: flex-start;
+    gap: 8px;
+    padding: 7px 24px;
+    background-color: #69594F;
+    border: none;
+    border-radius: 0;
+    text-decoration: none;
+    margin-top: auto;
+}
+.cta span{
+    font-family: var(--font-poppins);
+    font-weight: 400;
+    font-size: 18px;
+    color: #FFFFFF;
 }
 .pills{
     display: none;
@@ -84,36 +87,46 @@
 
 @media (min-width: 641px) and (max-width: 1024px) {
     .slide{
-        flex: 0 0 calc(50% - 12.5px);
+        flex: 0 0 calc(50% - 12px);
+    }
+    .cta{
+        padding: 7px 18px;
+    }
+    .cta span{
+        font-size: 16px;
     }
 }
 
 @media (max-width: 640px) {
-    .main{
-        padding: 80px 0px 80px 24px;
-    }
     .MainContainer{
-        gap: 25px;
-    }
-    .topContainer{
-        gap: 9px;
-        padding-right: 24px;
-    }
-    .topContainer p{
-        font-size: 14px;
+        gap: 24px;
     }
     .container{
-        gap: 20px;
+        gap: 15px;
     }
     .slide{
-        flex: 0 0 80%;
+        flex: 0 0 320px;
+    }
+    .imageWrapper{
+        aspect-ratio: unset;
+        height: 400px;
+    }
+    .card p{
+        font-size: 14px;
+        margin: 20px 0 10px 0;
+    }
+    .cta{
+        padding: 7px 9px;
+    }
+    .cta span{
+        font-size: 14px;
     }
     .pills{
         display: flex;
         align-items: center;
         justify-content: center;
         gap: 4px;
-        margin-top: 20px;
+        margin-top: 30px;
     }
     .pill{
         width: 6px;

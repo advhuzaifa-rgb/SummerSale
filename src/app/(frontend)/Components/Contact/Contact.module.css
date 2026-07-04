@@ -1,0 +1,119 @@
+.main{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  padding: 60px 24px;
+    background-color: #FFFCF7;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   gap: clamp(20px, 6vw, 80px);
+    flex-wrap: wrap;
+}
+.item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.item svg{
+    margin-bottom: 25px;
+}
+.item h3{
+    font-family: var(--font-pp-hatton);
+    font-weight: 500;
+    font-size: 25px;
+    color: #CD7D6D;
+    margin: 0 0 16px 0;
+}
+.item p{
+    font-family: var(--font-poppins);
+    font-weight: 400;
+    font-size: 20px;
+    color: #414141;
+    margin: 0;
+    line-height: 1.4;
+}
+.phone{
+    color: inherit;
+    text-decoration: underline;
+}
+.line{
+    width: 1px;
+    height: 120px;
+    flex-shrink: 0;
+    background-color: rgba(167, 167, 167, 0.5);
+}
+
+@media (min-width: 641px) and (max-width: 1024px) {
+    .main{
+        padding: 100px 24px;
+    }
+    .container{
+        gap: 40px;
+    }
+    .item h3{
+        font-size: 20px;
+    }
+    .item p{
+        font-size: 16px;
+    }
+    .line{
+        height: 100px;
+    }
+}
+
+@media (max-width: 640px) {
+    .main{
+        padding: 0px 24px;
+    }
+    .container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        column-gap: 54px;
+        row-gap: 44px;
+        position: relative;
+        width: 100%;
+      
+    }
+    .container::before{
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 0.5px;
+        height: 240px;
+        max-height: 100%;
+        background-color: #00000070;
+    }
+    .container::after{
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 280px;
+        max-width: 100%;
+        height: 0.5px;
+        background-color: #00000070;
+    }
+    .line{
+        display: none;
+    }
+    .item svg{
+        width: 32px;
+        height: auto;
+        margin-bottom: 6px;
+    }
+    .item h3{
+        font-size: 14px;
+        margin-bottom: 6px;
+    }
+    .item p{
+        font-size: 12px;
+    }
+}
