@@ -41,10 +41,13 @@
     gap: 25px;
 }
 .card{
+    display: block;
     position: relative;
     flex: 1;
     aspect-ratio: 437 / 522;
     overflow: hidden;
+    text-decoration: none;
+    color: inherit;
 }
 .cardImage{
     width: 100%;

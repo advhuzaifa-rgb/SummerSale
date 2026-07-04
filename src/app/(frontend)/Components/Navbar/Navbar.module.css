@@ -18,6 +18,12 @@
 .hide{
     transform: translateY(-100%);
 }
+.logoLink{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 0;
+}
 .logo{
     width: 100%;
     height: auto;

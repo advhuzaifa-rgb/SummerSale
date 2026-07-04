@@ -1,16 +1,16 @@
 import React from 'react'
 import styles from './SummerStyling.module.css'
 import Image from 'next/image'
-import one from './1.png'
-import two from './2.png'
-import three from './3.png'
-import four from './4.png'
+import one from './1.webp'
+import two from './2.webp'
+import three from './3.webp'
+import four from './4.webp'
 
 const styling = [
-  { image: one, title: 'Lighting' },
-  { image: two, title: 'Painting' },
-  { image: three, title: 'Coffee Table' },
-  { image: four, title: 'Occasional Chairs' },
+  { image: one, title: 'Lighting', href: 'https://www.alhuzaifa.com/en/?q=Lighting' },
+  { image: two, title: 'Painting', href: 'https://www.alhuzaifa.com/en/?q=Painting' },
+  { image: three, title: 'Coffee Table', href: 'https://www.alhuzaifa.com/en/?q=Coffee+table' },
+  { image: four, title: 'Occasional Chairs', href: 'https://www.alhuzaifa.com/en/?q=Chairs' },
 ]
 
 const SummerStyling = () => {
@@ -24,13 +24,13 @@ const SummerStyling = () => {
 
         <div className={styles.cards}>
           {styling.map((item) => (
-            <div className={styles.card} key={item.title}>
+            <a href={item.href} className={styles.card} key={item.title}>
               <Image src={item.image} alt={item.title} className={styles.cardImage} />
               <div className={styles.cardOverlay}></div>
               <div className={styles.cardText}>
                 <h3>{item.title}</h3>
               </div>
-            </div>
+            </a>
           ))}
         </div>
       </div>

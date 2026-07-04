@@ -5,44 +5,52 @@ import useEmblaCarousel from 'embla-carousel-react'
 
 const reviews = [
   {
-    text: 'Very impressed, excellent Quality, beautiful modern designs, u can customize or ready furnitures, very polite professional customer service..',
+    text: 'Very impressed, excellent Quality, beautiful modern designs, u can customize or ready furnitures, very polite professional customer service.',
     name: 'G F',
-    tag: 'Home - Owner',
+    tag: 'Google Review',
   },
   {
-    text: 'I am so grateful to have chosen Al Huzaifa for designing my villa. They were very professional, creative and understood every part of what i wanted to capture and translated it in such a beautiful way.',
+    text: 'I am so grateful to have chosen Al Huzaifa for designing my villa. They were very professional, creative and understood exactly what i wanted to capture. Thank you Team and Reem!',
     name: 'Asma khoori',
-    tag: 'Home - Owner',
+    tag: 'Google Review',
   },
   {
-    text: 'Looking great as in the showroom. Thank you to the professional team, from the showroom to the delivery. I highly recommend 👍',
+    text: `Looking great as in the showroom.
+Thank you to the professional people, starting with Karim at the showroom to the delivery team...
+I highly recommend \u{1F44D}`,
     name: 'David Amaneddine',
-    tag: 'Home - Owner',
+    tag: 'Google Review',
   },
   {
-    text: 'The quality of the furniture exceeded our expectations. The team guided us through every choice and the delivery was right on schedule.',
-    name: 'Fatima Rashid',
-    tag: 'Home - Owner',
+    text: `Demyana was very helpful in guiding us of what we want -spent quality time in guiding us and giving us choices
+She really was a great help thank u`,
+    name: 'nabila harazeen',
+    tag: 'Google Review',
   },
   {
-    text: 'From the showroom experience to the final installation, everything was seamless. Our living room finally feels complete.',
-    name: 'Omar Al Sayed',
-    tag: 'Home - Owner',
+    text: 'I had an amazing experience with Al Huzaifa Furniture - Abu Dhabi. A special thank you to the talented design team, who transformed our entrance and hall into a stunning 5-star lobby. Their creativity, attention to detail, and patience were truly impressive. Highly recommended!',
+    name: 'VIP',
+    tag: 'Google Review',
   },
   {
-    text: 'Beautiful designs and even better service. They understood our style instantly and helped us furnish our new villa.',
-    name: 'Layla Haddad',
-    tag: 'Home - Owner',
+    text: 'I recently purchased a modern sofa from Abu Dhabi and I could not be happier. The sales associate, Amir, was incredibly helpful and patient throughout. The price was very reasonable for the exceptional quality. Thank you Al Huzaifa.',
+    name: 'aysha alneyadi',
+    tag: 'Google Review',
   },
   {
-    text: 'Professional from start to finish. The custom pieces we ordered fit perfectly and the craftsmanship is outstanding.',
-    name: 'Khalid Mansoor',
-    tag: 'Home - Owner',
+    text: 'I love the products by Al Huzaifa, interesting design and good quality. I received excellent service from Mohamed Khaled/Abu Dhabi store with design service included, it really helped me choose the right furniture.',
+    name: 'Lena Havia',
+    tag: 'Google Review',
   },
   {
-    text: 'A wonderful experience overall. The staff were patient with all our questions and the furniture looks stunning in our home.',
-    name: 'Noura Saeed',
-    tag: 'Home - Owner',
+    text: 'Alhuzaifa is a brand that stands out in the furniture market by consistently delivering high quality pieces that compete with big brands, especially coffee tables. Excellent craftsmanship and durability at a decent price.',
+    name: 'MMM',
+    tag: 'Google Review',
+  },
+  {
+    text: 'One of the best furniture showrooms. Al Huzaifa Fit-out for interior design takes the space into another dimension - always proud to collaborate with their professional team. Highly recommended for high quality furniture and perfect service.',
+    name: 'Amena Remeithi',
+    tag: 'Google Review',
   },
 ]
 

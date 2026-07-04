@@ -2,28 +2,9 @@
 import React, { useCallback, useEffect, useState } from 'react'
 import styles from './Journal.module.css'
 import Image from 'next/image'
+import Link from 'next/link'
 import useEmblaCarousel from 'embla-carousel-react'
-import one from './1.png'
-import two from './2.png'
-import three from './3.png'
-
-const articles = [
-  {
-    image: one,
-    title: 'Summer Styling Guide: 10 Easy Ways to Refresh Your Home This Season',
-    href: 'https://www.alhuzaifa.com/en/blog',
-  },
-  {
-    image: two,
-    title: 'Top Summer Interior Design Trends for 2026',
-    href: 'https://www.alhuzaifa.com/en/blog/luxury-interior-design-trends',
-  },
-  {
-    image: three,
-    title: 'The Summer Home Edit : Accessories Worth Investing In',
-    href: 'https://www.alhuzaifa.com/en/blog',
-  },
-]
+import { articles } from './data'
 
 const ArrowIcon = () => (
   <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -65,10 +46,10 @@ const Journal = () => {
                     <Image src={article.image} alt={article.title} className={styles.image} />
                   </div>
                   <p>{article.title}</p>
-                  <a href={article.href} className={styles.cta}>
+                  <Link href={`/journal/${article.slug}`} className={styles.cta}>
                     <span>Read the article</span>
                     <ArrowIcon />
-                  </a>
+                  </Link>
                 </div>
               </div>
             ))}

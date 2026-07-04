@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from 'react'
 import styles from './Navbar.module.css'
 import Image from 'next/image'
+import Link from 'next/link'
 import logo from './logo.png'
 
 const Navbar = () => {
@@ -28,7 +29,9 @@ const Navbar = () => {
 
   return (
     <div className={`${styles.main} ${hide ? styles.hide : ''}`}>
-      <Image src={logo} alt="Al Huzaifa" className={styles.logo} />
+      <Link href="/" className={styles.logoLink}>
+        <Image src={logo} alt="Al Huzaifa" className={styles.logo} />
+      </Link>
     </div>
   )
 }

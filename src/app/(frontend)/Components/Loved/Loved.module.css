@@ -71,6 +71,7 @@
     font-size: 20px;
     color: #414141;
     margin: 0 0 44px 0;
+    white-space: pre-line;
 }
 .nameBlock{
     display: flex;
