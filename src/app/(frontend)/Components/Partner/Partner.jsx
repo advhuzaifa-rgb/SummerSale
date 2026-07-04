@@ -70,6 +70,21 @@ const Partner = () => {
             />
           ))}
         </div>
+
+        <a
+          href="https://www.designstudiobyalhuzaifa.com/en"
+          target="_blank"
+          rel="noopener noreferrer"
+          className={styles.cta}
+        >
+          <span>Explore Now</span>
+          <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M0.00168677 6.66688L0.00168683 5.17206L8.59712 5.17206L4.65755 1.06132L5.67467 -2.58748e-07L11.3477 5.91947L5.67467 11.8389L4.65755 10.7776L8.59712 6.66688L0.00168677 6.66688Z"
+              fill="white"
+            />
+          </svg>
+        </a>
       </div>
     </div>
   )

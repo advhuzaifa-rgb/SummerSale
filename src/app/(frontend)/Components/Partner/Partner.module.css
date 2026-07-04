@@ -37,6 +37,8 @@
 .viewport{
     overflow: hidden;
     width: 100%;
+    -webkit-user-select: none;
+    user-select: none;
 }
 .container{
     display: flex;
@@ -81,6 +83,22 @@
     cursor: pointer;
     flex-shrink: 0;
 }
+.cta{
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 7px 24px;
+    background-color: #69594F;
+    border: none;
+    border-radius: 0;
+    text-decoration: none;
+}
+.cta span{
+    font-family: var(--font-poppins);
+    font-weight: 400;
+    font-size: 18px;
+    color: #FFFFFF;
+}
 
 @media (min-width: 641px) and (max-width: 1024px) {
     .slide{
@@ -121,6 +139,12 @@
         border-radius: 50%;
         background-color: #4E4E4E;
         transition: width 0.3s ease, border-radius 0.3s ease;
+    }
+    .cta{
+        padding: 9.5px 24px;
+    }
+    .cta span{
+        font-size: 14px;
     }
     .pillActive{
         width: 45px;

@@ -1,8 +1,5 @@
 import React from 'react'
 import styles from './TheWorld.module.css'
-import Image from 'next/image'
-import one from './1d.webp'
-import two from './1m.webp'
 
 const TheWorld = () => {
   return (
@@ -35,8 +32,15 @@ const TheWorld = () => {
         </div>
 
         <div className={styles.bottomContainer}>
-          <Image src={one} alt="The World of Al Huzaifa" className={styles.desktopImage} />
-          <Image src={two} alt="The World of Al Huzaifa" className={styles.mobileImage} />
+          <video
+            className={styles.video}
+            src="/about.mp4"
+            autoPlay
+            muted
+            loop
+            playsInline
+            preload="metadata"
+          />
         </div>
       </div>
     </div>

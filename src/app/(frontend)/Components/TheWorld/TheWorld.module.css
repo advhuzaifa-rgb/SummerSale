@@ -59,15 +59,12 @@
 .bottomContainer{
     width: 100%;
 }
-.desktopImage{
+.video{
     display: block;
     width: 100%;
     height: auto;
     max-height: 530px;
     object-fit: cover;
-}
-.mobileImage{
-    display: none;
 }
 
 @media (max-width: 640px) {
@@ -90,13 +87,8 @@
     .cta span{
         font-size: 14px;
     }
-    .desktopImage{
-        display: none;
-    }
-    .mobileImage{
-        display: block;
-        width: 100%;
-        height: 500px;
-        object-fit: cover;
+    .video{
+        aspect-ratio: 16 / 9;
+        max-height: none;
     }
 }

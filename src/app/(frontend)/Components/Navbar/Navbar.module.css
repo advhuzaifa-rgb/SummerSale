@@ -34,9 +34,13 @@
 
 @media (max-width: 640px) {
     .main{
+        display: none;
         height: 56px;
     }
-    .logo{
+    .mobileVisible{
+        display: flex;
+    }
+    .mobileVisible .logo{
         max-width: 40px;
         max-height: 35px;
     }

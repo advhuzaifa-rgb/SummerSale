@@ -22,6 +22,8 @@
 .viewport{
     overflow: hidden;
     width: 100%;
+    -webkit-user-select: none;
+    user-select: none;
 }
 .container{
     display: flex;

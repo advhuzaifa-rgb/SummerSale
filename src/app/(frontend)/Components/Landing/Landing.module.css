@@ -60,10 +60,10 @@
         width: 85%;
     }
     .Main{
-       /* aspect-ratio: 16/9; */
-       height: 500px;
+       aspect-ratio: 16 / 9;
+       height: auto;
        align-items:flex-end;
-        
+
     }
     .MainContainer{
       padding-left: 10px;
