@@ -34,13 +34,10 @@
 
 @media (max-width: 640px) {
     .main{
-        display: none;
+        position: sticky;
         height: 56px;
     }
-    .mobileVisible{
-        display: flex;
-    }
-    .mobileVisible .logo{
+    .logo{
         max-width: 40px;
         max-height: 35px;
     }
